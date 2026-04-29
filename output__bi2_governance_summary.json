@@ -1,0 +1,29 @@
+{
+  "analysis": "BI-2: PK/FK 연계 거버넌스 규칙 발견",
+  "layers": {
+    "Layer1_AOI": {
+      "total_fk_pairs": 48121,
+      "intra_category": 16840,
+      "inter_category": 31281,
+      "inter_ratio": 0.65,
+      "dominant_link_direction": "교육 → 보건",
+      "dominance_score": 5598.0,
+      "insight": "카테고리 간 INTER 연결이 65.0%로 플랫폼 통합 거버넌스 필요"
+    },
+    "Layer2_Subspace": {
+      "subspaces_analyzed": 3,
+      "cluster_groups": 9,
+      "insight": "CAT→CAT 서브스페이스에서 CODE/LOOKUP 연결 클러스터 발견 → 공통 코드 표준화 필요"
+    },
+    "Layer3_Association": {
+      "global_rules": 12,
+      "cate2_rule_groups": 2,
+      "insight": "고신뢰도 컬럼 동반출현 규칙 발견 → 테이블 설계 시 필수 컬럼 쌍 거버넌스 기준 도출"
+    },
+    "Layer4_Sequential": {
+      "chains_extracted": 5245,
+      "frequent_subsequences": 1161,
+      "insight": "FK 체인 5,245개에서 PK→FK→ATTR 3단계 업무 흐름 패턴 반복 발견"
+    }
+  }
+}

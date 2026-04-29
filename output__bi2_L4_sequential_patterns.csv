@@ -1,0 +1,31 @@
+sequence,length,support,gov_rule
+보건의료:NUM:PK → 보건의료:CAT:PK → 보건의료:NUM:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:NUM:PK → 보건의료:CAT:PK → 보건의료:CAT:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:NUM:PK → 보건의료:NUM:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:NUM:PK → 보건의료:CAT:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:NUM:PK → 보건의료:CAT:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:CAT:PK → 보건의료:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:NUM:FK → 보건의료:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+유아및초·중등교육:NUM:PK → 평생·직업교육:CAT:PK → 평생·직업교육:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+유아및초·중등교육:NUM:PK → 평생·직업교육:NUM:FK → 평생·직업교육:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 평생·직업교육:NUM:FK → 보건의료:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:NUM:PK → 보건의료:CAT:FK → 보건의료:NUM:FK,3,18,동일 카테고리 내 수직 연계
+보건의료:CAT:PK → 보건의료:NUM:PK → 보건의료:CAT:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:CAT:PK → 보건의료:NUM:PK → 보건의료:NUM:FK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:CAT:PK → 보건의료:NUM:FK → 보건의료:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:CAT:PK → 보건의료:NUM:FK → 보건의료:CAT:FK,3,18,동일 카테고리 내 수직 연계
+보건의료:CAT:PK → 보건의료:CAT:FK → 보건의료:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+교육일반:NUM:PK → 교육일반:NUM:FK → 유아및초·중등교육:NUM:PK,3,18,PK↔PK 코드/참조 테이블 쌍
+보건의료:NUM:PK → 보건의료:NUM:FK → 보건의료:CAT:FK,3,17,동일 카테고리 내 수직 연계
+평생·직업교육:NUM:PK → 보건의료:CAT:FK → 보건의료:NUM:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:CAT:FK → 보건의료:NUM:FK,3,17,범주→수치 도메인 교차 연계
+평생·직업교육:NUM:PK → 보건의료:CAT:FK → 보건의료:CAT:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:CAT:PK → 보건의료:NUM:FK,3,17,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 보건의료:CAT:PK → 보건의료:CAT:FK,3,17,PK↔PK 코드/참조 테이블 쌍
+유아및초·중등교육:NUM:PK → 평생·직업교육:NUM:PK → 평생·직업교육:CAT:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 평생·직업교육:CAT:PK → 보건의료:NUM:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+평생·직업교육:NUM:PK → 평생·직업교육:CAT:PK → 보건의료:CAT:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+일반행정:NUM:PK → 고등교육:NUM:PK → 교육일반:NUM:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+보건의료:NUM:PK → 보건의료:CAT:FK → 보건의료:CAT:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+교육일반:NUM:PK → 유아및초·중등교육:CAT:PK → 유아및초·중등교육:NUM:PK,3,17,PK↔PK 코드/참조 테이블 쌍
+교육일반:CAT:PK → 교육일반:NUM:FK → 유아및초·중등교육:NUM:PK,3,17,PK↔PK 코드/참조 테이블 쌍

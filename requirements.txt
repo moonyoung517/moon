@@ -1,0 +1,40 @@
+#python -m venv .venv
+#.venv\Scripts\activate
+#pip install -r requirements.txt
+
+
+# ============================================================
+# data_intelligence — 분석 파이프라인 의존 패키지
+# Python 3.14.4 기준 (테스트 완료)
+#
+# 설치 방법:
+#   python -m venv .venv
+#   .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# 실행 방법:
+#   python final/build_final_outputs.py --clean
+# ============================================================
+
+# ── 핵심 데이터 처리 ──────────────────────────────────────────
+pandas==3.0.2
+numpy==2.4.4
+
+# ── 머신러닝 (KMeans, StandardScaler, PCA, silhouette_score) ──
+scikit-learn==1.8.0
+
+# ── 연관 규칙 / 빈발 패턴 (FP-Growth, TransactionEncoder) ────
+mlxtend==0.24.0
+
+# ── 희소 행렬 (Sequential 패턴 마르코프 체인) ────────────────
+scipy==1.17.1
+
+# ── 그래프 분析 (networkx — bi2에서 FK허브 체인 분析) ─────────
+networkx==3.6.1
+
+# ── 시각화 (선택적 — 스크립트에서 직접 사용하지 않으나 의존성) ─
+matplotlib==3.10.9
+seaborn==0.13.2
+
+# ── Excel 입출력 지원 (openpyxl — pandas Excel 백엔드) ────────
+openpyxl==3.1.5

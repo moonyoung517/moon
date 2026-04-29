@@ -1,0 +1,4 @@
+length,gov_rule,pattern_count,total_support,max_support
+3,PK↔PK 코드/참조 테이블 쌍,26,457,18
+3,동일 카테고리 내 수직 연계,3,53,18
+3,범주→수치 도메인 교차 연계,1,17,17

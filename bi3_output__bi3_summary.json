@@ -1,0 +1,62 @@
+{
+  "analysis_name": "BI-3 건강증진 프로그램 참여 순서 및 효과 Sequential 패턴 탐사",
+  "layers": {
+    "L1_AOI": {
+      "desc": "AOI Concept Description - 정책 목표 달성도 및 만성질환 참여강도 비교",
+      "outputs": [
+        "bi3_L1a_policy_aoi.csv",
+        "bi3_L1a_achieve_stats.csv",
+        "bi3_L1b_chronic_aoi.csv"
+      ],
+      "key_findings": [
+        "최고 달성 과제: 비만 (평균 365.1%)",
+        "최저 달성 과제: 정신보건 (평균 40.1%)"
+      ]
+    },
+    "L2_Subspace_Clustering": {
+      "desc": "KMeans Subspace Clustering - CAT/NUM 2개 서브스페이스",
+      "outputs": [
+        "bi3_L2a_cat_cluster_profile.csv",
+        "bi3_L2b_num_cluster_profile.csv",
+        "bi3_L2c_cluster_crosstab.csv",
+        "bi3_L2d_cluster_success_rate.csv"
+      ],
+      "key_findings": []
+    },
+    "L3_FPGrowth": {
+      "desc": "FP-Growth + Association Rules - 서비스 조합 패턴 및 물품 구매 패턴",
+      "outputs": [
+        "bi3_L3a_assoc_rules_global.csv",
+        "bi3_L3b_goods_assoc_rules.csv",
+        "bi3_L3c_treatment_stage_summary.csv"
+      ],
+      "key_findings": []
+    },
+    "L4_Sequential": {
+      "desc": "Sequential Pattern Analysis - 금연 4단계/방문연계/심박수 상태 시퀀스",
+      "outputs": [
+        "bi3_L4a_quit_sequences.csv",
+        "bi3_L4a_success_stage_dist.csv",
+        "bi3_L4a_svc_seq_patterns.csv",
+        "bi3_L4b_visit_monthly_type.csv",
+        "bi3_L4b_visit_transition.csv",
+        "bi3_L4b_visit_transition_matrix.csv",
+        "bi3_L4c_heart_transition.csv",
+        "bi3_L4c_heart_monthly.csv",
+        "bi3_L4c_heart_transition_matrix.csv"
+      ],
+      "key_findings": [
+        "최빈 시퀀스: N→N→N→N (비율: 33.3%)",
+        "전 단계 성공(완전금연) 비율: 20.9%"
+      ]
+    }
+  },
+  "data_sources": {
+    "금연서비스등록정보": "239,387행 × 31컬럼",
+    "심박수": "30,000행 × 5컬럼",
+    "방문연계기관": "1,184행 × 6컬럼",
+    "물품구매현황": "884행 × 6컬럼",
+    "건강증진종합계획": "1,178행 × 18컬럼",
+    "만성질환관리통계": "64행 × 7컬럼"
+  }
+}
