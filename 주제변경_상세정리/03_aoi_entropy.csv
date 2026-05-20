@@ -1,0 +1,11 @@
+feature,entropy,n_unique,dominant_value,dominant_pct
+col_type,1.0,2,수치형,50.4
+col_cnt_bucket,0.979,4,초풍부(21+),30.4
+cate2,0.9302,6,고등교육,27.3
+cate1,0.9241,3,교육,53.2
+dom_sim_bucket,0.923,4,낮은유사(0-0.1),46.2
+pk_bucket,0.8685,4,저PK(0-0.3),47.9
+val_sim_bucket,0.8599,4,낮은값유사,48.4
+rec_bucket,0.8287,4,소(≤100),42.2
+domain_spread,0.7426,4,대공유(21+),63.0
+null_bucket,-0.0,4,완전(0%),100.0
